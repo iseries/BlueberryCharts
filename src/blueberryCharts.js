@@ -142,9 +142,7 @@
             [0, 20, 33, 10, 54, 90, 70, 84, 95, 100],
             [0, 30, 23, 20, 44, 60, 10, 50, 10, 40]
         ],
-        chartLables: [
-            ['MO', 'DI', 'MI', 'DO', 'FR', 'SA', 'SO']
-        ],
+        chartLables: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'],
         showLines: true,
         showDots: false,
         lineColors: ['#FF5252', '#777777']

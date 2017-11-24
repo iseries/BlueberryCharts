@@ -29,7 +29,7 @@ Options:
 Option  | Description | Default Value
 ------------- | ------------- | -------------
 chartData  | Data Values **0-100**  _(Type: Array)_ | [[0, 20, 33, 10, 54, 90, 70, 84, 95, 100],[0, 30, 23, 20, 44, 60, 10, 50, 10, 40]]
-chartLables  | Lable Values _(Type: Array)_ | ['MO', 'DI', 'MI', 'DO', 'FR', 'SA', 'SO']
+chartLables  | Lable Values _(Type: Array)_ | ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
 showLines | Show Lines _(Type: Boolean)_ | true
 showDots | Show Dots _(Type: Boolean)_ | true
 lineColors | Colors for Lines and Dots _(Type: Array)_ | ['#FF5252', '#777777']
