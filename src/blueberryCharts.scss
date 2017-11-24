@@ -1,5 +1,113 @@
+/*!
+ * jQuery blueberryCharts Plugin
+ * https://github.com/iseries/blueberryCharts.js
+ *
+ * Copyright 2017, iseries
+ * https://github.com/iseries
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+*/
+
+// Settings
+$container-height: 100px;
+$container-with: 100%;
+$point-width: 10px;
+$container-color-background1: #FFFFFF;
+$container-color-background2: #F0F0F0;
+$stripes-in-the-background: 10;
+
+// logical stuff - do not modify!
+$container-height-result: $container-height / $stripes-in-the-background;
+
 html {
   body {
+    font-family: Arial;
     background: white;
+
+    .chart-wrapper {
+      max-width: 500px;
+      background: #999;
+      padding: 10px;
+    } // chart-wrapper
+
+    .blueberryChart {
+      position: relative;
+      height: $container-height;
+      width: $container-with;
+      background: repeating-linear-gradient(
+        to bottom,
+        $container-color-background1,
+        $container-color-background1 $container-height-result,
+        $container-color-background2 $container-height-result,
+        $container-color-background2 $container-height-result + $container-height-result
+      );
+      padding-top: 10px;
+
+      > .blueberryLine {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+        svg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+
+          polyline {
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke: red;
+          } // polyline
+        } // svg
+
+        > .blueberryPoints {
+          > .blueberryPoint {
+            position: absolute;
+            z-index: 1;
+            height: $point-width;
+            width: $point-width;
+            border-radius: $point-width;
+            margin-bottom: -5px;
+            margin-left: -5px;
+
+            > .blueberryTooltip {
+              position: absolute;
+              background: blue;
+              bottom: 13px;
+              left: 50%;
+              transform: translate3d(-50%, 10px, 0);
+              font-weight: 600;
+              font-size: 11px;
+              line-height: 11px;
+              color: white;
+              padding: 8px 6px;
+              border-radius: 3px;
+              visibility: hidden;
+              opacity: 0;
+              z-index: 2;
+              transition: transform 0.4s ease-out 0s, opacity 0.4s ease-out 0s;
+            } // blueberryTooltip
+
+            &:hover {
+              border: 3px solid rgba(255, 255, 255, .5);
+              margin-bottom: -8px;
+              margin-left: -8px;
+
+              > .blueberryTooltip {
+                visibility: visible;
+                opacity: 1;
+                transform: translate3d(-50%, -2px, 0);
+              } // blueberryTooltip
+            } // :hover
+          } // blueberryPoint
+        } // blueberryPoints
+      } // blueberryLine
+    } // blueberryCharts
   } // body
 } // html

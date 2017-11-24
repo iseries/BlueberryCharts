@@ -14,9 +14,28 @@
 <body>
 
 <h1>blueberryCharts.js</h1>
+<div class="chart-wrapper">
+    <div class="blueberryChart demo1"></div>
+</div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- blueberryCharts.css -->
 <script src="../src/blueberryCharts.js"></script>
+<script>
+    $(function() {
+        // Instantiate $.blueberryChart
+        $('.demo1').blueberryChart({
+            chartData: [
+                [0, 20, 33, 10, 54, 90, 70, 84, 95, 100],
+                [0, 30, 23, 20, 44, 60, 10, 50, 10, 40]
+            ],
+            chartLables: ['MO', 'DI', 'MI', 'DO', 'FR', 'SA', 'SO'],
+            showLines: true,
+            showDots: true,
+            lineColors: ['#FF5252', '#777777']
+        });
+    });
+</script>
 </body>
 </html>
