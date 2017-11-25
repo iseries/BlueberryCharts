@@ -21,7 +21,7 @@ Add js right before the closing body tag:
 
 Note: Don't forget to add jQuery. :)
 
-**Open the index.html file in the example folder for a demo**
+**Open the index.html file in the example folder for a working demo**
 
 ## Documentation
 
