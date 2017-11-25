@@ -1,7 +1,7 @@
 # blueberryCharts.js
 ![blueberryCharts](https://renewoerz.de/share/blueberryChartsPreview.png)
 
-*A jQuery Plugin to render a simple and good looking chart* - [renewoerz.de](https://www.renewoerz.de)
+*A jQuery Plugin to render a simple, responsive and good looking chart* - [renewoerz.de](https://www.renewoerz.de)
 
 ## Installation
 
