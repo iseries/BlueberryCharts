@@ -37,4 +37,4 @@ lineColors | Colors for Lines and Dots _(Type: Array)_ | ['#FF5252', '#777777']
 
 ## License
 
-Chart.js is available under the [MIT license](http://opensource.org/licenses/MIT).
+blueberryCharts.js is available under the [MIT license](http://opensource.org/licenses/MIT).
