@@ -1,5 +1,5 @@
 # blueberryCharts.js
-![blueberryCharts](https://renewoerz.de/share/blueberryChartsPreview.png)
+![blueberryCharts](https://github.com/iseries/blueberryCharts.js/blob/master/example/preview.jpg)
 
 *A jQuery Plugin to render a simple, responsive and good looking chart* - [renewoerz.de](https://www.renewoerz.de)
 
